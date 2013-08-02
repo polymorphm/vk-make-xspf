@@ -15,4 +15,4 @@ For opening console in Mozilla Firefox -- press [CTRL]+[SHIFT]+[K]
 Status
 ------
 
-status of project (this branch) is -- version for developer.
+status of project (this branch) is -- beta (version 0.1).
