@@ -1,7 +1,7 @@
 vk-make-xspf
 ============
 
-(TODO: description)
+``vk-make-xspf`` is script for web-browser -- for bulk copy MP3 files from VK.
 
 Using
 -----
@@ -11,4 +11,4 @@ Using
 Status
 ------
 
-status of project (this branch) is -- version for developer
+status of project (this branch) is -- version for developer.
