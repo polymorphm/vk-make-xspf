@@ -14,20 +14,11 @@
 //
 // You should have received a copy of the GNU Lesser General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
-//
-// ------------------------------INSTRUCTION----------------------------------
-//
-// Using in console -- this command:
-//      (function (g, d, m) {'use strict'; var x = g[m]; if (x) { x() } else { x = d.createElement('script'); x.src = m; x.charset = 'utf-8'; d.body.appendChild(x) } })(this, document, 'https://raw.github.com/vk-make-xspf-2012-04-13/vk-make-xspf/active/vk-make-xspf.js')
-//
-// For opening console in Mozilla Firefox -- press [CTRL]+[SHIFT]+[K]
-//
-// ---------------------------------------------------------------------------
 
 (function (global) {
     'use strict'
     
-    var MAIN_NAME = 'http://bit.ly/2012-04-13-vk-make-xspf'
+    var MAIN_NAME = 'https://raw.github.com/vk-make-xspf-2012-04-13/vk-make-xspf/active/vk-make-xspf.js'
     var XSPF_XMLNS = 'http://xspf.org/ns/0/'
     
     function replace_cycle (str, old_sub_str, new_sub_str) {
