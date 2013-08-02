@@ -1,6 +1,6 @@
 // -*- mode: javascript; coding: utf-8 -*-
 //
-// Copyright 2012 Andrej A Antonov
+// Copyright 2012, 2013 Andrej A Antonov <polymorphm@gmail.com>.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
@@ -18,14 +18,13 @@
 // ------------------------------INSTRUCTION----------------------------------
 //
 // Using in console -- this command:
-//      (function (w, d, m) {'use strict'; var x = w[m]; if (x) { x() } else { x = d.createElement('script'); x.src = m; x.charset = 'utf-8'; d.body.appendChild(x) } })(window, document, 'http://bit.ly/2012-04-13-vk-make-xspf')
+//      (function (g, d, m) {'use strict'; var x = g[m]; if (x) { x() } else { x = d.createElement('script'); x.src = m; x.charset = 'utf-8'; d.body.appendChild(x) } })(this, document, 'https://raw.github.com/vk-make-xspf-2012-04-13/vk-make-xspf/active/vk-make-xspf.js')
 //
 // For opening console in Mozilla Firefox -- press [CTRL]+[SHIFT]+[K]
-//      or -- use [SHIFT]+[F4] with file "vk-make-xspf-launcher.js"
 //
 // ---------------------------------------------------------------------------
 
-(function () {
+(function (global) {
     'use strict'
     
     var MAIN_NAME = 'http://bit.ly/2012-04-13-vk-make-xspf'
@@ -34,7 +33,7 @@
     function replace_cycle (str, old_sub_str, new_sub_str) {
             var new_str
             
-            for(;;) {
+            for (;;) {
                 new_str = str.replace(old_sub_str, new_sub_str)
                 
                 if (new_str != str) {
@@ -399,7 +398,7 @@
             )
     }
     
-    window[MAIN_NAME] = main
+    global[MAIN_NAME] = main
     
     main()
-})()
+})(this)
